@@ -24,12 +24,18 @@
     <ClCompile Include="TreeSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HashSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SortedSet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TreeSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HashSet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

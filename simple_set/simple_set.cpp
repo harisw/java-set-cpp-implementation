@@ -3,9 +3,11 @@
 
 #include <iostream>
 #include "TreeSet.h"
+#include "HashSet.h"
 
 int main()
-{
+{ 
+    cout << ">>>>>>>>>>>>>>  TREESET Testing  <<<<<<<<<<<<<<" << endl;
     TreeSet newSet;
     newSet.add(3);
     newSet.add(5);
@@ -30,15 +32,16 @@ int main()
     TreeSet subset = newSet.subSet(5, 13);
     subset.prettyPrint();
 
+
+    cout << ">>>>>>>>>>>>>>  HASHSET Testing  <<<<<<<<<<<<<<" << endl;
+
+    HashSet newHashset;
+    newHashset.add(7);
+    newHashset.add(9);
+    newHashset.add(2);
+    newHashset.add(2);
+
+    cout << "Check 2 : " << newHashset.contains(2) << endl;
+    cout << "Check 10 : " << newHashset.contains(10) << endl;
+    cout << "Size : " << newHashset.size() << endl;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

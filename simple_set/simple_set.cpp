@@ -4,6 +4,7 @@
 #include <iostream>
 #include "TreeSet.h"
 #include "HashSet.h"
+#include "LinkedHashSet.h"
 
 int main()
 { 
@@ -33,7 +34,7 @@ int main()
     subset.prettyPrint();
 
 
-    cout << ">>>>>>>>>>>>>>  HASHSET Testing  <<<<<<<<<<<<<<" << endl;
+    cout << ">>>>>>>>>>>>>>  Hashset Testing  <<<<<<<<<<<<<<" << endl;
 
     HashSet newHashset;
     newHashset.add(7);
@@ -44,4 +45,8 @@ int main()
     cout << "Check 2 : " << newHashset.contains(2) << endl;
     cout << "Check 10 : " << newHashset.contains(10) << endl;
     cout << "Size : " << newHashset.size() << endl;
+
+
+    cout << ">>>>>>>>>>>>>>  Linked Hashset Testing  <<<<<<<<<<<<<<" << endl;
+
 }

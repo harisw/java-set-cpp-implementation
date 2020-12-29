@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HashSet.cpp" />
+    <ClCompile Include="LinkedHashSet.cpp" />
     <ClCompile Include="simple_set.cpp" />
     <ClCompile Include="SortedSet.cpp" />
     <ClCompile Include="TreeSet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HashSet.h" />
+    <ClInclude Include="LinkedHashSet.h" />
     <ClInclude Include="SortedSet.h" />
     <ClInclude Include="TreeSet.h" />
   </ItemGroup>

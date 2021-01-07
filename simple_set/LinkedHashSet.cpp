@@ -56,10 +56,29 @@ bool LinkedHashSet::isEmpty()
 
 bool LinkedHashSet::remove(int e)
 {
-    return false;
+    if (this->hashMap.find(e) == this->hashMap.end())
+        return false;
+    //IF deleted node is head
+    if (this->hashMap[e].prev == nullptr) {
+        head = this->hashMap[e].next;
+        head->prev = nullptr;
+    }
+    else if (this->hashMap[e].next == nullptr) {
+        tail = this->hashMap[e].prev;
+        tail->next = nullptr;
+    }
+    else {
+        LinkedNode* prevNode = hashMap[e].prev;
+        prevNode->next = hashMap[e].next;
+
+        LinkedNode* nextNode = hashMap[e].next;
+        nextNode->prev = hashMap[e].prev;
+    }
+    this->hashMap.erase(e);
+    return true;
 }
 
 int LinkedHashSet::size()
 {
-    return 0;
+    return hashMap.size();
 }

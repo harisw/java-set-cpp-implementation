@@ -49,4 +49,15 @@ int main()
 
     cout << ">>>>>>>>>>>>>>  Linked Hashset Testing  <<<<<<<<<<<<<<" << endl;
 
+    LinkedHashSet newlinkedset;
+    newlinkedset.add(7);
+    newlinkedset.add(9);
+    newlinkedset.add(2);
+    newlinkedset.add(2);
+
+    cout << "Check 2 : " << newlinkedset.contains(2) << endl;
+    cout << "Check 10 : " << newlinkedset.contains(10) << endl;
+    cout << "Size : " << newlinkedset.size() << endl;
+    newlinkedset.remove(2);
+    cout << "Check 2 after removal: " << newlinkedset.contains(2) << endl;
 }
